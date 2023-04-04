@@ -56,3 +56,12 @@ form.addEventListener("submit", (e: Event) => {
 // docs.push(docOne);
 // docs.push(docTwo);
 // console.log(docs);
+
+import { generic } from "./generics/generic";
+generic();
+
+import { enumTest } from "./enums/enum";
+enumTest();
+
+import { tuple } from "./tuples/tuples";
+tuple();
