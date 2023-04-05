@@ -65,3 +65,6 @@ enumTest();
 
 import { tuple } from "./tuples/tuples";
 tuple();
+
+import { test } from "./test/test";
+test();
