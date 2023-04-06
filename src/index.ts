@@ -68,3 +68,12 @@ tuple();
 
 import { test } from "./test/test";
 test();
+
+import { result } from "./typeGurad/typeGurad";
+// result();
+
+import { resultNarrow } from "./typeNarrowing/typenarrowing";
+resultNarrow();
+
+import { abstract } from "./abstract/abstract";
+abstract();
