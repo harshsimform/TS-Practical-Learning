@@ -1,3 +1,4 @@
+//? A tuple type is an array with a predefined length and predefined types in each index position in the array. The types inside this array do not have to be the same, could be a mixture of different types.
 export function tuple() {
   //without tuple
   let arr = ["harsh", 21, true];
@@ -15,4 +16,25 @@ export function tuple() {
   arr2[0] = "vatsal";
   arr2[1] = 45;
   //   console.log(arr2);
+  // with tuple Case-2
+  async function apiCall1() {
+    return "";
+  }
+
+  async function apiCall2() {
+    return 1;
+  }
+
+  async function apiCall3() {
+    return false;
+  }
+
+  async function main() {
+    // destructure the above Promise.all() as follows, with each variable getting assigned the correct types.
+    const [string, number, boolean] = await Promise.all([
+      apiCall1(),
+      apiCall2(),
+      apiCall3(),
+    ]);
+  }
 }

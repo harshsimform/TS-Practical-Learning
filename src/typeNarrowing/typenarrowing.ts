@@ -8,8 +8,8 @@ export function resultNarrow() {
     { skills: [4, 5, 6], city: "SURAT" },
   ];
 
-  function printCity(city: string) {
-    // console.log(city);
+  function printCity(city: string): void {
+    console.log(city);
   }
 
   function narrow() {
@@ -22,12 +22,14 @@ export function resultNarrow() {
     }
   }
   narrow();
-  //   console.log(objStud);
-  //   good way to find undefined value
-  function isDefined<T>(arg: T | undefined): arg is T {
-    return typeof arg !== "undefined";
-  }
-  const list = ["a", "b", undefined, "c"];
-  const filtered = list.filter(isDefined);
-  console.log(filtered);
+  // console.log(objStud);
+  // good way to find undefined value
+  // function isDefined<T>(arg: T | undefined): arg is T {
+  //   return typeof arg !== "undefined";
+  // }
+  // const list = ["a", "b", "c", undefined, "d", 2];
+  // console.log(isDefined(list));
+
+  // const filtered = list.filter(isDefined);
+  // console.log(filtered);
 }

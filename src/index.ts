@@ -19,8 +19,8 @@ import { HasFormatter } from "./interface/HasFormatter";
 // invTwo.amount = 500;
 
 // get elemnts from html
-const type = document.querySelector("#selectMenu") as HTMLSelectElement;
-const toFrom = document.querySelector("#inputToFrom") as HTMLInputElement;
+const type: HTMLInputElement = document.querySelector("#selectMenu")!;
+const toFrom: HTMLInputElement = document.querySelector("#inputToFrom")!;
 const details = document.querySelector("#inputDetails") as HTMLInputElement;
 const amount = document.querySelector("#inputAmount") as HTMLInputElement;
 
@@ -69,11 +69,17 @@ tuple();
 import { test } from "./test/test";
 test();
 
-import { result } from "./typeGurad/typeGurad";
-// result();
+import { typeGuard } from "./typeGurad/typeGurad";
+// typeGuard();
 
 import { resultNarrow } from "./typeNarrowing/typenarrowing";
-resultNarrow();
+// resultNarrow();
 
 import { abstract } from "./abstract/abstract";
 abstract();
+
+import { test2 } from "./test2/test2";
+test2();
+
+import { test3 } from "./test3/test3";
+test3();
